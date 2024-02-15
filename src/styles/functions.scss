@@ -1,0 +1,6 @@
+@function remScale($pixels) {
+  $font-size: 16;
+  $rem-scale: calc($pixels / $font-size);
+
+  @return $rem-scale;
+}

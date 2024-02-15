@@ -1,0 +1,42 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('./functions.scss');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-size: remScale(1);
+}
+
+body {
+  min-height: 100%;
+}
+
+button {
+  @apply btn bg-sky-600;
+  font-size: 1.25rem;
+
+  &:hover {
+    @apply bg-sky-900;
+  }
+}
+
+.modal {
+  &::backdrop {
+    background-color: #00000026;
+    backdrop-filter: blur(1rem);
+  }
+}
